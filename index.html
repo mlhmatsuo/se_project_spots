@@ -7,11 +7,111 @@
     <meta name="author" content="Mark Matsuo" />
     <meta name="keywords" content="html css responsive social media photos" />
     <meta name="title" content="Spots" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="icon" href="./favicon.ico" />
   </head>
   <body>
     <div class="page">
-      <header class="header"></header>
-      <main class="content"></main>
+      <header class="header">
+        <img class="header__logo" src="./images/logo.svg" alt="logo" />
+      </header>
+      <main class="content">
+        <section class="profile page__section">
+          <img
+            class="profile__avatar"
+            src="./images/avatar.jpg"
+            alt="profile_avatar"
+          />
+          <div class="profile__info">
+            <h1 class="profile__title">Bessie Coleman</h1>
+            <p class="profile__subtitle">Civil Aviator</p>
+            <button type="button" class="profile__edit-button">
+              <img
+                src="./images/edit.svg"
+                alt="edit"
+                class="profile__edit_image"
+              />
+              Edit Profile
+            </button>
+          </div>
+          <button type="button" class="profile__add-button">
+            <img src="./images/add.svg" alt="edit" class="profile__add_image" />
+            Add Post
+          </button>
+        </section>
+        <section class="cards page__section">
+          <ul class="cards__list">
+            <li class="card">
+              <img
+                class="card__image"
+                src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt="moritz_feldman"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Val Thorens</h2>
+                <button class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                class="card__image"
+                src="./images/2-photo-by-ceiline-from-pexels.jpg"
+                alt="ceiline"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Restaurant Terrace</h2>
+                <button class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                class="card__image"
+                src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
+                alt="tubanur_dogan"
+              />
+              <div class="card__content">
+                <h2 class="card__title">An Outdoor Cafe</h2>
+                <button class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                class="card__image"
+                src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
+                alt="maurice_laschet"
+              />
+              <div class="card__content">
+                <h2 class="card__title">
+                  A very long bridge, over the forest...
+                </h2>
+                <button class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                class="card__image"
+                src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
+                alt="van_anh_nguyen"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Tunnel with morning light</h2>
+                <button class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                class="card__image"
+                src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt="moritz_feldman"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Mountain house</h2>
+                <button class="card__like-button"></button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
       <footer class="footer"></footer>
     </div>
   </body>
