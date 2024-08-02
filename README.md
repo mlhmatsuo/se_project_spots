@@ -36,10 +36,14 @@ Project for learning to do a responsive layout implementing grid properties and 
 - css
 
 **Pictures**
-![Flexbox-example] (./images/demo/flexbox_photo.png)
-![List-displayed-as-grid] (./images/demo/list_grid_photo.png)
-![1440-view] (./images/demo/1140_view.png)
-![320-view] (./images/demo/320_view.png)
+
+![Flexbox-example](./images/demo/flexbox_photo.png)
+
+![List-displayed-as-grid](./images/demo/list_grid_photo.png)
+
+![1440-view](./images/demo/1140_view.png)
+
+![320-view](./images/demo/320_view.png)
 
 **Link to Deployed Website**
 
