@@ -14,7 +14,7 @@
 .profile__info {
   display: flex;
   flex-direction: column;
-  width: 420px;
+  max-width: 420px;
 }
 
 .profile__title {
@@ -23,6 +23,11 @@
   font-size: 32px;
   line-height: 1;
   color: #212121;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .profile__subtitle {
@@ -31,6 +36,11 @@
   font-size: 16px;
   line-height: 1;
   color: #212121;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .profile__edit-button {
