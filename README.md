@@ -48,3 +48,5 @@ Project for learning to do a responsive layout implementing grid properties and 
 **Link to Deployed Website**
 
 [Deployment Link] (https://mlhmatsuo.github.io/se_project_spots/)
+
+[Video Link](https://drive.google.com/drive/folders/11IoQGVuC1iaOPJZWkZ1yyAEQ56PCOpNc?usp=sharing)
