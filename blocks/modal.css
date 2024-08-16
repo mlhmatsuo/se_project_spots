@@ -11,6 +11,11 @@
   justify-content: center;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   padding: 0 10px;
+  visibility: hidden;
+}
+
+.modal__opened {
+  visibility: visible;
 }
 
 .modal__container {
