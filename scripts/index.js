@@ -29,14 +29,61 @@ const profileEditButton = document.querySelector(".profile__edit-button");
 
 const editProfileModal = document.querySelector("#edit-profile-modal");
 
-const profileCloseButton = document.querySelector(".modal__close-button");
+const profileTitle = document.querySelector(".profile__title");
+
+const profileSubtitle = document.querySelector(".profile__subtitle");
+
+const modalForm = editProfileModal.querySelector(".modal__form");
+
+const profileCloseButton = editProfileModal.querySelector(
+  ".modal__close-button"
+);
+
+const profileSubmitButton = editProfileModal.querySelector(
+  ".modal__submit-button"
+);
+
+const nameInputField = editProfileModal.querySelector("#name");
+
+const descriptionInputField = editProfileModal.querySelector("#description");
+
+const cardTemplate = document.querySelector("#card__template");
+
+const cardsList = document.querySelector(".cards__list");
 
 function openModal() {
+  nameInputField.value = profileTitle.textContent;
+  descriptionInputField.value = profileSubtitle.textContent;
   editProfileModal.classList.add("modal__opened");
 }
 
 function closeModal() {
   editProfileModal.classList.remove("modal__opened");
+}
+
+function submitProfileForm(event) {
+  event.preventDefault();
+  profileTitle.textContent = nameInputField.value;
+  profileSubtitle.textContent = descriptionInputField.value;
+  closeModal();
+}
+
+function getCardElement(data) {
+  console.log(data);
+  const cardElement = cardTemplate.content
+    .querySelector(".card")
+    .cloneNode(true);
+  const cardTitleElement = cardElement.querySelector(".card__title");
+  cardTitleElement.textContent = data.name;
+  const cardImageElement = cardElement.querySelector(".card__image");
+  cardImageElement.src = data.link;
+  cardImageElement.alt = data.name;
+  return cardElement;
+}
+
+for (let i = 0; i < initialCards.length; i++) {
+  const cardElement = getCardElement(initialCards[i]);
+  cardsList.prepend(cardElement);
 }
 
 profileEditButton.addEventListener("click", function () {
@@ -45,4 +92,8 @@ profileEditButton.addEventListener("click", function () {
 
 profileCloseButton.addEventListener("click", function () {
   closeModal();
+});
+
+modalForm.addEventListener("submit", function () {
+  submitProfileForm(event);
 });
